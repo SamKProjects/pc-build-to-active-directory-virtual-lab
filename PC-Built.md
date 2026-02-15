@@ -36,3 +36,7 @@ Gigabyte B450M DS3H V2
 - Running multiple virtual machines  
 - Hosting an Active Directory domain lab  
 - Practicing help desk and IT support workflows  
+
+
+## 🛠️ PC Assembly Summary
+This PC was assembled by installing the CPU, mounting the cooler, installing 48GB of RAM, adding the SSD and HDD, installing the Radeon 6700XT GPU, routing power cables, adding case fans for airflow, and verifying all components in BIOS on first boot.
