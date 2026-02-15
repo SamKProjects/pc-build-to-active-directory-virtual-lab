@@ -16,18 +16,18 @@ M.I.T. → Advanced CPU Settings → SVM Mode → Enabled
 
 
 🚀 3. Enable XMP for RAM Performance
-Enabling XMP ensures your RAM (48GB total) runs at proper speeds.
+Enabling XMP ensures RAM (48GB total) runs at proper speeds.
 Path:
 
 M.I.T. → Advanced Memory Settings → X.M.P. → Profile 1
 
 
 🔄 4. Set USB as Primary Boot Device
-Needed to load the Windows installer from your Rufus USB.
+Needed to load the Windows installer from Rufus USB.
 Steps:
 
 Go to BIOS → Boot
-Set Boot Option #1 = Your USB drive
+Set Boot Option #1 = USB drive
 Press F10 to save and reboot
 
 
@@ -41,7 +41,7 @@ Rufus application
 Steps
 
 Open Rufus
-Select your USB drive
+Select USB drive
 Choose the Windows 11 ISO
 Use the following settings:
 
@@ -69,7 +69,7 @@ Click Install Now
 Select I don’t have a product key (optional)
 Choose Windows 11 Pro (best for IT labs)
 Choose Custom Installation
-Select your SSD (500GB)
+Select SSD (500GB)
 Click Next and allow Windows to install
 PC will reboot several times
 
