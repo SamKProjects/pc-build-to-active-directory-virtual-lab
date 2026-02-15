@@ -1,4 +1,5 @@
 # 🖥️ PC Build Overview
+![desktop](https://github.com/user-attachments/assets/71c150ea-db27-4827-a5b5-375c6683d0b3)
 This file documents the hardware used to build the physical PC for this IT lab. This system serves as the base machine for installing Windows, configuring BIOS settings, and running virtual machines for the Active Directory lab environment.
 
 ## 🔧 PC Specifications
@@ -28,8 +29,10 @@ Gigabyte B450M DS3H V2
 
 
 ## <img width="30" alt="image" src="https://github.com/user-attachments/assets/9ef3e24b-5dcc-4c48-afb5-bc50ec2f91ad" /> Build Purpose
-**This PC was built to support:** Windows installation and testing
-BIOS configuration (including enabling SVM for virtualization),
-Running multiple virtual machines,
-Hosting an Active Directory domain lab, and
-Practicing help desk and IT support workflows
+
+**This PC was built to support:**  
+- Windows installation and testing  
+- BIOS configuration (including enabling SVM for virtualization)  
+- Running multiple virtual machines  
+- Hosting an Active Directory domain lab  
+- Practicing help desk and IT support workflows  
