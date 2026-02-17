@@ -118,7 +118,6 @@ Password: (Server admin password)
 
 
 ✅ Lab Complete
-At this stage, you have:
 
 A functioning Windows Server 2025 domain controller
 A Windows 11 client joined to the domain
