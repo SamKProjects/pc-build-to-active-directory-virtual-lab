@@ -86,8 +86,7 @@ Install Windows normally.
 🌐 6. Assign IP to Windows 11 Client
 Inside Windows 11:
 
-Control Pannel → Network & Internet → Network and Sharing Center → Change adapter settings → Properties
-Select Internet Protocol Version 4(TCP/IPv4)
+Control Pannel → Network & Internet → Network and Sharing Center → Change adapter settings → Properties → Select Internet Protocol Version 4(TCP/IPv4)
 
 Set:
 IP Address: 10.0.2.6
@@ -98,13 +97,11 @@ DNS: 10.0.2.5  (Domain Controller)
 <img width="780" height="588" alt="Screenshot_2026_02_16-4" src="https://github.com/user-attachments/assets/9f6f55c0-6575-4ad5-933f-6c61f7792340" />
 
 🔁 7. Test Connectivity Between Server & Client
-From the Server:
-ping 192.168.50.20
-
 From the Client:
-ping 192.168.50.10
+ping 10.0.2.5
+<img width="955" height="622" alt="Screenshot_2026_02_16-5" src="https://github.com/user-attachments/assets/7c9866f7-409f-47d9-b5ab-eb53b878cf9f" />
 
-If both machines reply, the network is working.
+If machines reply, the network is working.
 
 🔗 8. Join Windows 11 Client to the Domain
 On the Windows 11 machine:
@@ -121,8 +118,8 @@ Log in using:
 
 Username: CORP\Administrator
 Password: (Server admin password)
+<img width="2043" height="786" alt="Screenshot_2026_02_17-1" src="https://github.com/user-attachments/assets/ef130f44-1ecd-49d8-b475-6bffbac83dd9" />
 
-Restart when prompted.
 
 ✅ Lab Complete
 At this stage, you have:
