@@ -16,12 +16,11 @@ Steps
 
 Open VirtualBox
 Go to File → Tools → Network Manager
-Add a Host‑Only Network
+Add a NAT Network Network
 Recommended configuration:
 
-Name: LAB-NET
-IPv4 Address: 192.168.50.1
-IPv4 Mask:    255.255.255.0
+Name: VirtualMachines(Active_Directory)
+IPv4 Address Prefix: 10.0.2.0/24
 DHCP Server:  Disabled
 
 This provides a stable LAN for your VMs.
@@ -45,17 +44,14 @@ Install Windows normally.
 Inside Windows Server:
 
 Open Settings → Network & Internet → Ethernet
-Select the Host‑Only adapter
 Click Edit under “IP Assignment”
 Set to Manual → IPv4
 
 Use:
-IP Address: 192.168.50.10
+IP Address: 10.0.2.5
 Subnet Mask: 255.255.255.0
-Gateway: (leave blank)
-DNS: 192.168.50.10
-
-This ensures the server will serve DNS for the domain.
+Gateway: 10.0.2.1
+DNS: 127.0.0.1(Loopback)
 
 🏰 4. Install Active Directory Domain Services
 
