@@ -68,6 +68,8 @@ Choose:
 Create a new forest
 Root Domain Name: corp.local
 
+<img width="1024" height="733" alt="Screenshot_2026_02_16-3" src="https://github.com/user-attachments/assets/13853443-964a-4468-bb37-0852b96ecf36" />
+
 Reboot when completed.
 
 💻 5. Windows 11 Client VM Setup
@@ -84,16 +86,16 @@ Install Windows normally.
 🌐 6. Assign IP to Windows 11 Client
 Inside Windows 11:
 
-Settings → Network & Internet → Ethernet
-Select the Host‑Only adapter
-Edit IP assignment → Manual → IPv4
+Control Pannel → Network & Internet → Network and Sharing Center → Change adapter settings → Properties
+Select Internet Protocol Version 4(TCP/IPv4)
 
 Set:
-IP Address: 192.168.50.20
+IP Address: 10.0.2.6
 Subnet Mask: 255.255.255.0
-Gateway: (blank)
-DNS: 192.168.50.10   (Domain Controller)
+Gateway: 10.0.2.1
+DNS: 10.0.2.5  (Domain Controller)
 
+<img width="780" height="588" alt="Screenshot_2026_02_16-4" src="https://github.com/user-attachments/assets/9f6f55c0-6575-4ad5-933f-6c61f7792340" />
 
 🔁 7. Test Connectivity Between Server & Client
 From the Server:
