@@ -9,7 +9,7 @@ Enforced stricter password requirements
 Applied a domain‑wide desktop background via GPO
 
 
-📁 1) Organizational Units (OUs)
+## 📁 1) Organizational Units (OUs)
 Goal: Organize objects and prepare for targeted Group Policy.
 Steps I took:
 
@@ -42,7 +42,7 @@ jdoe
 m.smith
 
 
-🔐 3) Resetting User Passwords
+## 🔐 3) Resetting User Passwords
 Goal: Provide a quick, auditable way to handle password resets.
 What I did:
 
@@ -51,7 +51,7 @@ Right‑clicked the account → Reset Password.
 Entered the new password and chose whether to force a change at next logon.
 
 
-🛡️ 4) Strengthening the Password Policy
+## 🛡️ 4) Strengthening the Password Policy
 Goal: Enforce stronger domain‑wide password hygiene.
 Where I configured it:
 
@@ -78,28 +78,15 @@ PowerShellgpupdate /force``Show more lines
 
 <img width="1006" height="759" alt="Screenshot_2026_02_18-4" src="https://github.com/user-attachments/assets/d2bfb340-cb0a-455e-8c4b-4bb0e2bde6c5" />
 
-🖼️ 5) Domain‑Wide Desktop Background (GPO)
-Goal: Standardize the desktop background for branding and easy domain identification.
-Preparation I did:
+## 🖼️ 5) Domain‑Wide Desktop Background (GPO)
+Created a shared, highly available path in NETLOGON.
 
-Created a shared, highly available path in SYSVOL or NETLOGON (replicated across DCs).
-
-Example:
-C:\Windows\SYSVOL\domain\scripts\Wallpapers
-
-or
 C:\NETLOGON\Wallpapers
 
 
 
-
-Placed the image file there (e.g., CorpWallpaper.jpg).
+Placed the image file there (e.g., wallpaper.jpg).
 Ensured Domain Users have read permissions.
-
-GPO I created and configured:
-
-In Group Policy Management, I created a new GPO linked at the domain level:
-Name: Corp Desktop Background
 
 
 Edited the GPO and set:
@@ -117,13 +104,12 @@ Applied it on a Windows 11 client:
 PowerShellgpupdate /forceShow more lines
 
 Signed out/in to confirm the wallpaper change.
+<img width="2057" height="723" alt="VMWALLPAPER" src="https://github.com/user-attachments/assets/a4ae5583-717f-4b00-a005-7dc353b1331b" />
 
-
-Tip: Using the UNC path under \\<domain>\NETLOGON\… or \\<domain>\SYSVOL\… ensures the file is available on any DC via DFS replication.
 
 
 ✅ Outcome
-By the end of these steps, I:
+By the end of these steps, I have:
 
 Established a clear OU hierarchy for scalable administration.
 Created domain users with consistent naming and secure onboarding.
